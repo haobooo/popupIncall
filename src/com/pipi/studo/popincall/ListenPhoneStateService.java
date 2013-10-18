@@ -104,6 +104,7 @@ public class ListenPhoneStateService extends Service {
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		Log.d("popupIncall", "ListenPhoneStateService onCreate");
 		
 		TelephonyManager telephonyManager =
                 (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
