@@ -10,7 +10,7 @@ public class BootCompleteReceiver extends BroadcastReceiver {
 
 	@Override
 	public void onReceive(Context context, Intent intent) {
-		Log.d("popupIncall", "BootCompleteReceiver onReceive");
+		Log.d("popupIncall", "BootCompleteReceiver onReceive action=" + intent.getAction());
 		Intent service = new Intent(context, ListenPhoneStateService.class);
 		context.startService(service);
 	}
