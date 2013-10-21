@@ -6,8 +6,8 @@ b)弹框可移动
  -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pipi.studo.popincall"
-    android:versionCode="4"
-    android:versionName="1.0.4" >
+    android:versionCode="5"
+    android:versionName="1.0.5" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -38,6 +38,7 @@ b)弹框可移动
             <intent-filter >
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
             </intent-filter>
         </receiver>
     </application>
